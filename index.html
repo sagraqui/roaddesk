@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoadDesk | The AI crew assistant for live tours</title>
+  <meta name="description" content="RoadDesk is an AI crew assistant that answers tour questions instantly from the official tour book and crew policies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="aurora" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="brand-dot"></span>RoadDesk</a>
+      <nav class="nav-links">
+        <a class="hide-sm" href="#features">Features</a>
+        <a href="how-it-works.html">How it works</a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme">&#9728;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: AI-generated video, autoplay + loop -->
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <video src="video.mp4" autoplay loop muted playsinline preload="auto" aria-label="AI-generated video of a tour crew working backstage under aurora-colored stage lights"></video>
+      </div>
+      <div class="wrap hero-content">
+        <div class="hero-tag"><span class="live-dot"></span>Live on Lumen Coast's Northern Lights Tour &middot; Texas leg, Nov 19&ndash;29, 2026</div>
+        <h1>Every tour answer.<br><span class="grad">Before load-in.</span></h1>
+        <p class="lead">RoadDesk is the AI crew assistant that knows the tour book cold. Call times, bus assignments, per diem, venue details and crew policy, answered in seconds from the official source.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="how-it-works.html">See how RoadDesk works <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-ghost" href="#" data-open-chat>Chat with RoadDesk</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats">
+      <div class="wrap stats">
+        <div class="reveal"><div class="stat-num grad" data-count="24" data-suffix="/7">0</div><div class="stat-label">Available across every time zone on the route</div></div>
+        <div class="reveal" style="--d:.1s"><div class="stat-num grad" data-count="11" data-suffix=" days">0</div><div class="stat-label">Texas leg covered day by day</div></div>
+        <div class="reveal" style="--d:.2s"><div class="stat-num grad" data-count="1">0</div><div class="stat-label">Source of truth: the official tour book</div></div>
+        <div class="reveal" style="--d:.3s"><div class="stat-num grad" data-count="0">0</div><div class="stat-label">Group-chat threads needed to find a call time</div></div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <p class="eyebrow reveal">Why crews use it</p>
+        <h2 class="reveal">The production office, in your pocket.</h2>
+        <p class="lead reveal">On a tour, the same forty questions get asked a hundred times a day. RoadDesk takes them off the tour manager's phone.</p>
+        <div class="grid grid-3" style="margin-top:40px">
+          <article class="card reveal"><div class="icon">&#128214;</div><h3>Grounded in the tour book</h3><p>Answers come from the official tour book and crew policies, not from guesses. If it is not in the book, RoadDesk says so.</p></article>
+          <article class="card reveal" style="--d:.1s"><div class="icon">&#9201;</div><h3>Instant schedule answers</h3><p>Load-in, sound check, doors, curfew and bus call for any date on the leg, without scrolling a 60-page PDF.</p></article>
+          <article class="card reveal" style="--d:.2s"><div class="icon">&#128222;</div><h3>Key contacts on tap</h3><p>Who to call for travel, payroll, safety or a missing laminate. One tap from the chat's Key contacts button.</p></article>
+          <article class="card reveal"><div class="icon">&#128203;</div><h3>Policy without the lecture</h3><p>Per diem, guest list, overtime and safety rules explained in plain language, with the policy behind each answer.</p></article>
+          <article class="card reveal" style="--d:.1s"><div class="icon">&#127769;</div><h3>Built for 3 a.m.</h3><p>Dark by default, thumb friendly, and awake when the production office is finally asleep on the bus.</p></article>
+          <article class="card reveal" style="--d:.2s"><div class="icon">&#128640;</div><h3>Live in a day</h3><p>Upload the tour book, review the answers, share one link. No app install and no crew training required.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="try">
+      <div class="wrap grid grid-2" style="align-items:center">
+        <div class="reveal">
+          <p class="eyebrow">Try it now</p>
+          <h2>Ask it what you would ask the tour manager.</h2>
+          <p class="lead">The live RoadDesk assistant is in the corner of this page. Open it and try one of these.</p>
+          <div class="chips">
+            <button class="chip" type="button" data-open-chat>What time is load-in tomorrow?</button>
+            <button class="chip" type="button" data-open-chat>Who handles travel changes?</button>
+            <button class="chip" type="button" data-open-chat>What is the per diem policy?</button>
+            <button class="chip" type="button" data-open-chat>Which bus am I on?</button>
+          </div>
+        </div>
+        <div class="card reveal" style="--d:.15s">
+          <h3>From a 60-page PDF to a 5-second answer</h3>
+          <p style="margin-bottom:18px">Tour books are thorough and nobody reads them at 6 a.m. RoadDesk turns the document your production team already wrote into a conversation the whole crew can use.</p>
+          <a class="btn btn-primary" href="how-it-works.html">Learn more about the project <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- X-Factor description (under 50 words) -->
+    <section id="x-factor" style="padding-top:0">
+      <div class="wrap">
+        <div class="xfactor reveal">
+          <p style="margin:0"><strong>Creative X-Factor:</strong> An animated visual system. A live aurora canvas drifts behind every page, sections glide in as you scroll, the stats count up on view, and a sun/moon button switches between dark and light themes and remembers your choice.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">RoadDesk &middot; Tour crew assistant concept by Salvador Grajeda Quinonez &middot; SMU Cox &middot; Hero video generated with AI.</div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

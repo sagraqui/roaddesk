@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How RoadDesk works | AI crew assistant for live tours</title>
+  <meta name="description" content="How RoadDesk turns a tour book and crew policies into an AI assistant for touring crews.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="aurora" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="brand-dot"></span>RoadDesk</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html" aria-current="page">How it works</a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme">&#9728;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">About the project</p>
+        <h1 class="reveal">One tour book.<br><span class="grad">Zero repeat questions.</span></h1>
+        <p class="lead reveal">A touring production moves dozens of people through a new city every day. The plan lives in a tour book: a long document with schedules, travel, contacts and policies. It is accurate, and it is almost never the first place a tired crew member looks. They text the tour manager instead. RoadDesk is an AI assistant that reads the tour book so the crew does not have to, and gives the production office its phone back.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:20px">
+      <div class="wrap grid grid-2">
+        <div class="card reveal">
+          <h3>The problem</h3>
+          <p>Tour managers and production coordinators answer the same questions all day: call times, bus lists, hotel addresses, per diem, guest list rules. Every answer is already written down. The cost is interruption: each text pulls a decision maker away from the problems that actually need a human, and a wrong answer passed along in a group chat can mean a missed bus call.</p>
+        </div>
+        <div class="card reveal" style="--d:.1s">
+          <h3>The solution</h3>
+          <p>RoadDesk is a chatbot trained only on a tour's official documents. For this pilot it serves Lumen Coast's Northern Lights Tour, Texas leg, November 19 to 29, 2026. Crew open one link, ask in plain language, and get the answer the tour book gives. When the book does not cover a question, RoadDesk says so and points to the right contact.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="eyebrow reveal">How it works</p>
+        <h2 class="reveal">Four steps from PDF to crew assistant.</h2>
+        <div class="steps" style="margin-top:36px">
+          <div class="card step reveal"><h3>Upload the source documents</h3><p>The production team adds the tour book, day sheets and crew policies. These are the only material RoadDesk is allowed to answer from.</p></div>
+          <div class="card step reveal"><h3>Set the guardrails</h3><p>RoadDesk is instructed to stay on tour topics, to quote the policy behind an answer, and to hand off to a named contact for anything about safety, pay disputes or emergencies.</p></div>
+          <div class="card step reveal"><h3>Test with real questions</h3><p>The tour manager runs the forty most common crew questions through it and corrects the source documents wherever an answer is unclear. Fixing the book fixes the bot.</p></div>
+          <div class="card step reveal"><h3>Share one link</h3><p>The assistant goes out to the crew as a link or a widget on the tour site, like the one in the corner of this page. No install, no login, works on any phone backstage.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="eyebrow reveal">Before and after</p>
+        <h2 class="reveal">What changes on show day.</h2>
+        <div class="card reveal table-scroll" style="margin-top:30px;padding:10px 14px">
+          <table class="compare">
+            <thead><tr><th>Moment</th><th>Without RoadDesk</th><th>With RoadDesk</th></tr></thead>
+            <tbody>
+              <tr><td>6:00 a.m. bus arrival</td><td>Ten texts asking for the load-in time</td><td>Crew ask the assistant; tour manager sleeps another hour</td></tr>
+              <tr><td>New local hire</td><td>Someone walks them through the policies</td><td>They ask RoadDesk and get the policy itself</td></tr>
+              <tr><td>Travel day change</td><td>Old info keeps circulating in group chats</td><td>Update the document once; every answer updates</td></tr>
+              <tr><td>After the show</td><td>Production office still answering questions</td><td>RoadDesk covers the night shift</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid grid-3">
+        <div class="card reveal"><div class="icon">&#127908;</div><h3>Who it is for</h3><p>Tour managers, production coordinators and crew chiefs on arena, theater and festival runs, plus the touring and local crew they support.</p></div>
+        <div class="card reveal" style="--d:.1s"><div class="icon">&#128176;</div><h3>Business model</h3><p>A per-tour subscription priced by leg length and crew size. Setup takes a day, so it pays for itself on short runs as well as long ones.</p></div>
+        <div class="card reveal" style="--d:.2s"><div class="icon">&#128301;</div><h3>What is next</h3><p>Daily day-sheet updates, Spanish and English answers for cross-border crews, and usage reports that show which parts of the tour book confuse people.</p></div>
+      </div>
+      <div class="wrap reveal" style="margin-top:44px;text-align:center">
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn btn-primary" href="#" data-open-chat>Ask RoadDesk a question <span class="arrow">&rarr;</span></a>
+          <a class="btn btn-ghost" href="index.html">&larr; Back to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">RoadDesk &middot; Tour crew assistant concept by Salvador Grajeda Quinonez &middot; SMU Cox</div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
